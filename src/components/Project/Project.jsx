@@ -279,10 +279,10 @@ export default function Project() {
                     <>
                         <Navbar />
                         {
-                            projectData === null ? <><h1 style={{ color: 'white' }}>Loading...</h1></> :
+                            projectData === null ? <div className='create-project'><h1>Loading...</h1></div> :
                                 projectData === undefined ?
-                                    <div>
-                                        <h1 style={{ color: 'white' }}>You need to create a Project First!</h1>
+                                    <div className='create-project'>
+                                        <h1>You need to create a Project First!</h1>
                                         <Link to="/project/new">
                                             <button>Create Project</button>
                                         </Link>
